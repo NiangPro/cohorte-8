@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulaire en html</title>
+</head>
+<body>
+	<fieldset>
+		<legend align="center">Forumlaire d'inscription</legend>
+
+		<form >
+			<label for="prenom">Prénom</label> <br>
+			<input type="text" id="prenom" readonly value="Bassirou" placeholder="Entrer votre prénom"><br>
+
+			<label for="nom">Nom</label><br>
+			<input type="text" id="nom"  maxlength="5"  placeholder="Entrer votre nom"> <br>
+
+			<label for="">Email</label><br>
+			<input type="email"><br>
+			<label for="">Mot de passe</label><br>
+			<input type="password"><br>
+			<label for="">Prix</label><br>
+			<input type="number" min="5" step="5"><br>
+			<label for="">Sexe</label><br>
+			M <input type="radio" name="sexe">
+			F <input type="radio" name="sexe" checked> <br>
+			<label for="">Langues</label> <br>
+			Français <input type="checkbox">
+			Anglais <input type="checkbox">
+			Chinois <input type="checkbox">
+			Italien <input type="checkbox"> <br>
+
+			<input type="submit" value="Créer">
+			<button type="reset">Annuler</button>
+
+
+		</form>
+	</fieldset>
+</body>
+</html>
