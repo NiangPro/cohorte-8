@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulaire en Html</title>
+</head>
+<body>
+	<fieldset>
+		<legend align="center">Créer un compte</legend>
+		<form action="">
+			<label for="">Prénom</label><br>
+			<input type="text"  disabled value="Bassirou" placeholder="Entrer votre prénom"><br>
+			<label for="">Nom</label><br>
+			<input type="text" readonly><br>
+			<label for="">Numéro de téléphone</label><br>
+			<input type="tel" value="" required><br>
+			<label for="">Date de naissance</label><br>
+			<input type="datetime-local"><br>
+			<label for="">Prix</label><br>
+			<input type="number" min="50" step="5" max="100"><br>
+			<label for="">Email</label><br>
+			<input type="email" required> <br>
+			<label for="">Sexe</label><br>
+			M <input type="radio" name="sexe"> F <input type="radio" name="sexe" checked><br>
+			<label for="">Pays</label><br>
+			<select name="" id="">
+				<option value="">Veuillez selectionner un pays</option>
+				<option value="">Sénégal</option>
+				<option value="">Mali</option>
+				<option value="">Guinée</option>
+				<option value="">Gambie</option>
+				<option value="" selected>Brésil</option>
+			</select><br>
+			<label for="">Description</label><br>
+			<textarea name="" cols="20" rows="5" id=""></textarea><br>
+			<label for="">Plage</label><br>
+			<input type="range"><br>
+			<label for="">Couleur</label><br>
+			<input type="color"><br>
+			<label for="">Temps</label><br>
+			<input type="time"><br>
+			<label for="">Veuillez selectionner un fichier</label><br>
+			<input type="file"> <br>
+			<a href="audios/audio1.zip">Télécharger l'audio</a><br>
+
+
+			<br><input type="submit" value="Créer">
+			<button type="reset">Annuler</button>
+
+		</form>
+	</fieldset>
+
+	<details>
+		<summary>Cliquer pour voir plus</summary>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum.
+	</details>
+</body>
+</html>
