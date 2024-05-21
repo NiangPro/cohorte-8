@@ -1,0 +1,15 @@
+#para2{
+	border: 1px solid #000;
+}
+
+.custom{
+	text-shadow: 2px 2px 5px #000;
+}
+
+a{
+	font-size: 72px;
+}
+
+*{
+	font-family: "Algerian";
+}
