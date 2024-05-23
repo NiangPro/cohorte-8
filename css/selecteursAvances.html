@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les selecteurs avancés</title>
+    <style>
+        p, h1, span{
+            background: lightskyblue;
+        }
+
+        p a{
+            text-decoration: none;
+            font-size: 34px;
+            color: red;
+        }
+
+        input[type="email"], input[type="password"]{
+            width: 300px;
+            outline: none;
+            border-width: 10px;
+            border-style: solid;
+        }
+
+        input[type="submit"]{
+            background: green;
+            border: none;
+            height: 30px;
+            color: white; 
+            border-radius: 10px;
+        }
+
+        input[type="submit"]:hover{
+            background: lightgreen;
+            transition: 2s;
+            cursor: pointer;
+        }
+
+        #cercle{
+            width: 100px;
+            height: 100px;
+            background: peru;
+            border-radius: 50%;
+        }
+
+        #para::first-letter{
+            font-size: 70px;
+            font-weight: bold;
+            font-family: "algerian";
+        }
+
+        input[type="reset"]{
+            background: red;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        input[type="reset"]:hover{
+            background: darkred;
+            transition: 2s;
+        }
+
+        #cadre{
+            width: 200px;
+            height: 100px;
+            border: 10px outset #a20606;
+        }
+    </style>
+</head>
+<body>
+    <p id="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Id impedit tempore perferendis maiores molestias consequuntur minus,
+         qui libero suscipit? Velit quos voluptatem itaque excepturi laboriosam perferendis dolor inventore consequatur quo.
+        <a href="">Lorem ipsum dolor sit amet.</a><br>
+    </p>
+    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+    <a href="">Lorem, ipsum dolor.</a> <br>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, deleniti.</span><br>
+<br>
+    <form action="">
+        <input type="email" placeholder="Entrer votre email"> <br><br>
+        <input type="password" placeholder="Entrer votre mot de passe"><br><br>
+        <input type="submit" value="Se connecter">
+        <input type="reset" value="Annuler">
+    </form>
+    <div id="cercle"></div>
+    <div id="cadre"></div>
+</body>
+</html>
