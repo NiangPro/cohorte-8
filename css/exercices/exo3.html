@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(2, 146, 146);
+        }
+        #cadre{
+            height: 430px;
+            width: 800px;
+            margin: auto;
+            margin-top: 100px;
+            box-shadow: 5px 5px 15px grey, -5px -5px 15px grey;
+            display: flex;
+        }
+
+        #gauche, #droite{
+            display: inline-block;
+        }
+        #gauche{
+            width: 49.5%;
+            height: 100%;
+            color: white;
+        }
+        #droite{
+            width: 49.5%;
+            height: 100%;
+            background: #001f3e;
+        }
+
+        #description{
+            width: 60%;
+            height: 40%;
+            border: 5px solid white;
+            text-align: center;
+            margin: auto;
+            margin-top: 140px;
+        }
+
+        .btn-group{
+            float: right;
+            margin: 20px;
+        }
+
+        .login{
+            background: rgb(2, 146, 146);
+            color: white;
+            border: none;
+            padding: 5px;
+            border-radius: 15px 0px 0px 15px;
+            width: 60px;
+        }
+
+        .register{
+            background: rgb(63, 65, 65);
+            color: white;
+            border: none;
+            padding: 5px;
+            border-radius: 0px 15px 15px 0px;
+            width: 60px;
+        }
+
+        .formulaire{
+            width: 65%;
+            height: 75%;
+            background: rgb(8, 38, 81);
+            margin: auto;
+            margin-top: 50px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .formulaire h2{
+            text-align: center;
+        }
+
+        .formulaire p{
+            color: rgb(207, 207, 207);
+        }
+
+        .formulaire input{
+            display: block;
+            width: 90%;
+            margin-bottom: 10px;
+            padding: 5px;
+            outline: none;
+        }
+        .formulaire a{
+            color: rgb(211, 207, 207);
+            display: block;
+            text-decoration: none;
+            text-align: right;
+            padding-right: 15px;
+        }
+
+        .formulaire button{
+            display: block;
+            width: 100%;
+            background: rgb(2, 146, 146);
+            padding: 5px 0px;
+            border: none;
+            color: white;
+            border-radius: 2px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .formulaire span{
+            background: rgb(8, 38, 81); 
+            margin: auto;
+            margin-top: -20px;
+            display: block;
+            width: 30px;
+
+        }
+
+        .social-network {
+            margin-top: 10px;
+        }
+
+        .social-network img{
+            width: 30px;
+            height: 30px;
+        }
+
+        .author{
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="cadre">
+        <div id="gauche">
+            <div id="description">
+                <h4>WELCOME TO LOGO</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Modi minus omnis atque.</p>
+            </div>
+        </div>
+        <div id="droite">
+            <div class="btn-group">
+                <button class="login">Login</button>
+                <button class="register">Register</button>
+            </div>
+            <div class="formulaire">
+                <h2>LOGO</h2>
+                <p>Sign in into your account</p>
+                <form action="">
+                    <input type="email" placeholder="Email Adress"> 
+                    <input type="password" placeholder="Password"> 
+                    <a href="">Forget your password</a>
+                    <button type="submit">Login</button>
+                </form>
+                <hr>
+                <span>Or</span>
+                <div class="social-network">
+                    <img src="../../images/facebook.png" alt="">
+                    <img src="../../images/twitter.png" alt="">
+                    <img src="../../images/google.png" alt="">
+                    <img src="../../images/linkedin.png" alt="">
+                </div>
+            </div>
+            <p class="author">Developed by Cohorte 8</p>
+        </div>
+    </div>
+</body>
+</html>
