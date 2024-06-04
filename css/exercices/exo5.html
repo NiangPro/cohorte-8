@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to bottom,white,#733ea8, #733ea8);
+            height: 100vh;
+        }
+        #cards{
+            width: 90%;
+            height: 350px;
+            margin: auto;
+            margin-top: 70px;
+            display: flex;
+            column-gap: 35px;
+        }
+
+        .card{
+            width: 270px;
+            height: 100%;
+            background: white;
+        }
+
+        .card-header{
+            height: 40%;
+            width: 100%;
+        }
+
+        .card-header img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-body{
+            height: 59%;
+            width: 240px;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .card-body a{
+            text-decoration: none;
+            color: white;
+            background: green;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .description{
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+        }
+        .description h1{
+            font-size: 62px;
+            font-weight: lighter;
+        }
+
+        .description a{
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cards">
+        <div class="card">
+            <div class="card-header">
+                <img src="../../images/title1.jpeg" alt="">
+            </div>
+            <div class="card-body">
+                <h2>Title 1</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente 
+                    sint asperiores sequi placeat, similique aperiam.
+                </p>
+                <a href="">Click here</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../../images/title2.jpg" alt="">
+            </div>
+            <div class="card-body">
+                <h2>Title 2</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente 
+                    sint asperiores sequi placeat, similique aperiam.
+                </p>
+                <a href="">Click here</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../../images/title3.jpeg" alt="">
+            </div>
+            <div class="card-body">
+                <h2>Title 3</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente 
+                    sint asperiores sequi placeat, similique aperiam.
+                </p>
+                <a href="">Click here</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../../images/title4.jpeg" alt="">
+            </div>
+            <div class="card-body">
+                <h2>Title 4</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente 
+                    sint asperiores sequi placeat, similique aperiam.
+                </p>
+                <a href="">Click here</a>
+            </div>
+        </div>
+    </div>
+    <div class="description">
+        <h1>Bootstrap 4 tutorial - Cards</h1>
+        <a href="">webseotips.com</a>
+    </div>
+</body>
+</html>
