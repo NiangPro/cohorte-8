@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        nav{
+            height: 50px;
+            background: rgb(1, 109, 109);
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .logo{
+            color: white;
+            font-size: 28px;
+            line-height: 55px;
+        }
+
+        .logo span{
+            color: orange;
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+        }
+
+        nav ul li{
+            position: relative;
+            width: 120px;
+            font-size: 20px;
+        }
+
+        nav ul li ul{
+            display: flex;
+            flex-direction: column;
+            box-shadow: 1px 1px 3px grey;
+            background: rgb(236, 235, 235);
+            visibility: hidden;
+        }
+
+        nav ul li ul li{
+            height: 35px;
+        }
+
+        nav ul li ul li a{
+            color: black;
+            opacity: 1;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            opacity: .5;
+        }
+
+        nav ul li:focus-within ul{
+            visibility: visible;
+        }
+
+        .active{
+            opacity: 1;
+        }
+
+        .design{
+            font-size: 45px;
+        }
+
+        .after::after{
+            content: "";
+            height: 5px;
+            /*border: 5px solid grey;*/
+            width: 10px;
+            border: 1px solid red;
+            border-left: 0px;
+            border-radius: 0px 0px 250% 250%;
+            position: absolute;
+            top: 5px;
+            background: red;
+            opacity: 1;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+    <nav>
+        <div class="logo">Vision<span>Tech</span></div>
+        <ul>
+            <li><a href="" class="active"><i class="fa fa-home"></i> Accueil</a></li>
+            <li><a href="">Formations</a></li>
+            <li class="dropdown">
+                <a href="#" class="after"><i class="fa fa-comment"></i> Exercices </a>
+                <ul class="dropdown-menu">
+                    <li><a href="">Html</a></li>
+                    <li><a href="">Css</a></li>
+                    <li><a href="">Bootstrap</a></li>
+                </ul>
+            </li>
+            <li><a href="">Galeries</a></li>
+            <li><a href=""><i class="fa fa-user"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="design">design</div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

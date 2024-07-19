@@ -1,0 +1,1 @@
+document.write("Affichage dans la partie body")

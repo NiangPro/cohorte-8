@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+</head>
+<body>
+    
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#suppression">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="suppression" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Suppression</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Etes-vous sur de vouloir supprimer?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Non</button>
+          <button type="button" class="btn btn-danger">OUI</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script>
+        const PI = 3.14;
+        let a = 15, b=7;
+        let somme = a + b;
+        let prenom = prompt("Entrer n'import quoi");
+
+        if(confirm("Etes-vous majour?")){
+            alert("cool")
+        }else{
+            alert("bad")
+        }
+
+        console.log("valeur de Pi"+PI);
+        console.log(typeof prenom);
+        alert("Bonjour")
+
+        document.write(`${a} + ${b} = ${a+b}<br>`);
+        document.write(`${a} - ${b} = ${a-b}<br>`);
+        document.write(`${a} / ${b} = ${a/b}<br>`);
+        document.write(`${a}DIV ${b} = ${parseInt(a/b)}<br>`);
+        document.write(`${a} x ${b} = ${a*b}<br>`);
+        document.write(`${a} modulo ${b} = ${a%b}<br>`);
+    </script>
+    <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
