@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let choix = prompt(`
+                *********** MENU PRINCIPAL *********
+                1. Sports
+                2. Couleur
+                3. Musique
+                Faites votre choix
+        `);
+
+        switch(choix){
+            case "1": 
+                choix = prompt(`
+                    ***** Menu Sports *********
+                    a- Football
+                    b- Basketball
+                `);
+                switch(choix){
+                    case 'a': 
+                        choix = prompt(`
+                            ****** Menu Sports - Football *****
+                            1- Homme
+                            2- Femme
+                            Faites votre choix
+                        `);
+                        
+                        switch(choix){
+                            case '1': 
+                                alert("Vous avez choisi football (homme)");
+                                break;
+                            case '1': 
+                                alert("Vous avez choisi football (femme)");
+                                break;
+                            default: 
+                                alert("Choix indisponible");
+                                break;
+                        }
+                    break;
+                    case 'b': 
+                        alert("Vous avez choisi basketball");
+                    break;
+
+                    default: 
+                        alert("Choix indisponible");
+                        break;
+                }
+            break;
+            case "2": 
+                choix = prompt(`
+                    ***** Menu Couleur ******
+                    1- Vert
+                    2- Orange
+                    Faites votre choix
+                `);
+                switch(choix){
+                    case '1': 
+                        alert("Vous choisi la couleur verte");
+                        break;
+                    case '2': 
+                        alert("Vous avez choisi la couleur orange")
+                        break;
+                    default: 
+                        alert("Choix indisponible");
+                        break;
+                }
+            break;
+            case "3": 
+                choix = prompt(`
+                    ******** Menu Musique ********
+                    a- Mbalax
+                    b- Raggae
+                    Faites votre choix
+                `);
+                switch(choix){
+                    case 'a': 
+                        alert("Vous avez choisi mbalax");
+                        break;
+                    case 'b': 
+                        alert("Vous avez choisi Raggae");
+                        break;
+                    default: 
+                        alert("Choix indisponible");
+                        break;
+                }
+            break;
+            default: 
+                alert("Choix indisponible");
+                break;
+        }
+    </script>
+</body>
+</html>
