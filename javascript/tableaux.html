@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tab = new Array("Bassirou", "Fatou", "Charles", 56, "Diallo");
+
+        let entiers = [45, -6, 10, 6];
+
+        // la taille du tableau
+        console.log("taille: "+entiers.length)
+        //recuperer un element du tableau
+        console.log(tab.at(1))
+        console.log(tab[tab.length - 1])
+
+        //ajouter a la premiere position
+        tab.unshift("Oumar") 
+
+        // ajouter a  la derniere position
+        tab.push("Alioune")
+
+        // supprimer le dernier element
+        tab.pop()
+
+        //supprimer le premier element
+        tab.shift()
+
+        //parcourir le tableau
+        for(let i = 0; i < tab.length; i++){
+            document.write(`element N° ${i+1}: ${tab[i]}<br>`)
+        }
+
+        console.log(tab)
+    </script>
+</body>
+</html>
