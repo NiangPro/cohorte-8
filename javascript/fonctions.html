@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les fonctions en javascript</title>
+</head>
+<body>
+    <script>
+        function direBonjour(prenom){
+            document.write(`Bonjour ${prenom} <br>`);
+        }
+
+        function somme(a, b){
+            document.write(`${a} + ${b} = ${a+b}<br>`);
+        }
+
+        //fonction anonyme 
+
+        let table_de_multiplication = function (nombre){
+            document.write(`La table de multiplication de ${nombre} est <br>`);
+            for(let i=1; i<=10;i++){
+                document.write(`${nombre} x ${i} = ${nombre * i}<br>`)
+            }
+        }
+
+        // fonction flechee
+        let produit = (n, m)=>{
+            return n*m;
+        }
+
+        let p = "Moussa";
+        direBonjour(p);
+        direBonjour("Fatou");
+
+        somme(3, 7);
+        somme(23, 7);
+        somme(5, -7);
+
+        table_de_multiplication(5);
+        table_de_multiplication(9);
+
+        let pr = produit(4, 8);
+
+        document.write("La valeur de la fonction produit est : "+pr);
+
+    </script>
+</body>
+</html>

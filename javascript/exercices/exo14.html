@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tousLesNombresPremiers = (nombre)=>{
+
+            document.write(`Tous les nombres premiers compris entre 1 et ${nombre} sont: <br>`);
+            for(let i = 1; i <= nombre; i++){
+                let compteur = 0;
+                for(let j = 1; j <= i; j++){
+                    if(i % j == 0){
+                        compteur++;
+                    }
+                }
+
+                if(compteur == 2 || i == 1){
+                    document.write(`${i} - `)
+                }
+            }
+        }
+
+        let n;
+        do{
+            n = parseInt(prompt("Veuillez saisir un nombre superieur a 0"));
+        }while(n <= 0);
+
+        tousLesNombresPremiers(n);
+    </script>
+</body>
+</html>

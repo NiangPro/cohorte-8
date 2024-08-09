@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        let nombre = parseInt(prompt("Veuillez saisir un nombre entier"))
+        while(nombre < 0){
+            nombre = parseInt(prompt("SVP! Veuillez saisir un nombre positif"))
+        };
+
+        let somme = 0;
+        let quotient = nombre;
+
+        while(quotient != 0){
+            somme = somme + (quotient%10);
+            quotient = parseInt(quotient / 10);
+        }
+
+        document.write(`La somme de chiffres de ${nombre} est de ${somme}`);
+    </script>
+</body>
+</html>

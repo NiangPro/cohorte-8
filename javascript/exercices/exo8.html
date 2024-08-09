@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let nombre = parseInt(prompt("Veuillez saisir un nombre entier"))
+
+        if(nombre > 0){
+            //elle permet de compteur le nombre de diviseur 
+            let compteur = 0;
+
+            for(let i=1; i<= nombre; i++){
+               // on recherche les diviseurs 
+               if(nombre % i == 0){
+                compteur++;
+               }
+            }
+
+            //on teste le nombre de diviseurs
+            if(compteur == 2 || nombre == 1){
+                document.write(`${nombre} est un nombre premier`)
+            }else{
+                document.write(`${nombre} n'est pas un nombre premier`)
+            }
+        }else{
+            alert("Veuillez saisir un nombre positif")
+        }
+    </script>
+</body>
+</html>

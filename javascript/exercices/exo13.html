@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function estCarre(nombre){
+            let rc = parseInt(Math.sqrt(nombre));
+            if(nombre == (rc* rc)){
+                document.write(`${nombre} est un nombre carre et racine de ${nombre} 
+                est egal a ${Math.sqrt(nombre)}`)
+            }else{
+                document.write(`${nombre} n'est pas un nombre carre`)
+            }
+        }
+
+        let n = parseInt(prompt("Veuillez saisir un nombre entier"))
+
+        estCarre(n);
+    </script>
+</body>
+</html>

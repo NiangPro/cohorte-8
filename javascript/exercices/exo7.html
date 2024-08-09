@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre = parseInt(prompt("Veuillez saisir un nombre entier"))
+
+        if(nombre  >= 0){
+            if(nombre > 1){
+                let r = 1;
+                for(let i = 1; i <=nombre; i++){
+                    r = r * i;
+                }
+                document.write(`${nombre}! = ${r}`);
+            }else{
+                document.write(`${nombre}! = 1`);
+            }
+        }else{
+            alert("Veuillez entrer un nombre superieur ou egal a 0");
+        }
+    </script>
+</body>
+</html>

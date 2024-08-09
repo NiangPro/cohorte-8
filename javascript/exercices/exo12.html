@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equation du second degré</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Entrer la valeur de a"));
+        let b = parseFloat(prompt("Entrer la valeur de b"));
+        let c = parseFloat(prompt("Entrer la valeur de c"));
+
+        document.write(`${a}x<sup>2</sup>+ (${b})x + (${c}) = 0 <br>`);
+
+        if(a != 0){
+            let delta = b*b - (4*a*c);
+
+            if(delta < 0){
+                document.write("S egal ensemble vide");
+            }else if(delta == 0){
+                let x0 = (-1 * b) / (2*a);
+
+                document.write(`S = { ${x0}}`);
+            }else{
+                let rd = Math.sqrt(delta);
+                let x1 = (-b -rd)/ (2*a);
+                let x2 = (-b +rd)/ (2*a);
+
+                document.write(`S = { ${x1}, ${x2}}`);
+            }
+        }else{
+            document.write(`S = { ${-c/b}}`);
+        }
+
+        
+    </script>
+</body>
+</html>

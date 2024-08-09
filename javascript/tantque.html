@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombreMagic = 23, chiffre;
+
+        //initialisation 
+        let trouve = false;
+        while(trouve == false){
+            
+            chiffre = parseInt(prompt("Veuillez saisir le chiffre magic"))
+
+            if(chiffre == nombreMagic){
+                document.write("Félicitations! vous avez trouve le bon chiffre");
+                trouve = true;
+            }else if(chiffre > nombreMagic){
+                alert("Votre chiffre est plus grand")
+            }else{
+                alert("Votre chiffre est plus petit")
+
+            }
+        }
+        
+    </script>
+</body>
+</html>
