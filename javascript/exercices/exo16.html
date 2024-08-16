@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tableau = [];
+        let taille = parseInt(prompt("Veuillez entrer la taille du tableau"))
+
+        //saisie du tableau 
+        for(let i=0; i < taille; i++){
+            tableau.push(prompt("Veuillez entrer la valeur"+(i+1)+ " du tableau:"));
+        }
+
+        affichage(tableau, "<br>Les valeurs du tableau avant decalage: <br>");
+
+        //traitement du decalage 
+        let dernierElement = tableau.pop();
+        tableau.unshift(dernierElement);
+
+        affichage(tableau, "<br>Les valeurs du tableau apres decalage: <br>");
+
+        //une fonction pour afficher un tableau 
+        function affichage(tab, message){
+            document.write(message);
+            tab.forEach( (val, indice) => {
+                if(indice == tab.length - 1){
+                    document.write(val)
+                }else{
+                    document.write(val+" - ")
+                }
+            })
+        }
+    </script>
+</body>
+</html>

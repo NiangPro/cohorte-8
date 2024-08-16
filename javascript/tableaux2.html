@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tab = [23, -5, "Pathe", "Samba"];
+
+        //ajouter un element dans le tableau
+        
+        tab.splice(1, 0, "MAtar");
+
+        // modifier un element du tableau
+        tab.splice(2, 1, 15);
+
+        // supprimer un element du tableau
+        tab.splice(3, 2);
+
+
+        //affichage
+        tab.forEach( 
+            (val, pos) => {
+                document.write(`element N°${pos+1} : ${val}<br>`)
+            }
+        )
+
+        tab.forEach((val)=>{
+            document.write(`${val} - `)
+         })
+
+         tab.forEach( val => document.write(`${val} - `))
+
+         tab.forEach(function(val){
+            document.write(`${val} - `)
+         })
+
+         let t = [12, -5, 30, -34, 100, 2];
+         t = t.reverse()
+
+         t.sort(function(a, b){
+            return b - a
+         })
+
+         console.log(t)
+    </script>
+</body>
+</html>
