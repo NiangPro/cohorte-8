@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #titre{
+            color: brown;
+        }
+
+        .custom{
+            text-shadow: 2px 2px 3px brown;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="titre">Manipulation du html <span> en javascript</span></h1>
+    <p class="custom">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aliquam odit doloremque. Quas amet modi delectus accusantium, quo quam fugiat illo possimus culpa incidunt explicabo id ipsum cumque necessitatibus natus.
+    </p>
+    <a href="" class="custom">Documentation de javascript</a>
+    <p>
+        deuxieme paragraphe
+    </p>
+
+    <script>
+        let titre = document.getElementById("titre");
+        let els = document.getElementsByClassName("custom");
+        let paras = document.getElementsByTagName("p")
+        let lien = els[1];
+
+        
+        window.console.log(titre.innerText)
+        window.console.log(titre.innerHTML)
+
+        titre.innerText = "Un titre genere en javascript";
+
+        console.log(lien.innerHTML)
+        console.log(paras[1])
+
+        lien.href = "https://youtube.com";
+        lien.target = "_blank";
+        lien.style.textDecoration = "none";
+        lien.style.fontSize = "45px";
+    </script>
+</body>
+</html>
