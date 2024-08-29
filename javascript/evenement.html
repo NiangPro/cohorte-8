@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="global">
+        <p id="para">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt modi velit perspiciatis ea molestias quam, amet dolores ut iure delectus labore expedita, omnis quos error veritatis natus officiis dicta cupiditate.
+        </p>
+        <button id="btn" type="button">Changer</button>
+        <button type="button" id="clear" onclick="effacer()">Effacer la mise en forme</button>
+    </div>
+    
+
+    <script>
+        let para= document.getElementById("para");
+        let btn= document.getElementById("btn");
+        let clear= document.getElementById("clear");
+
+        clear.style.visibility = "hidden";
+
+        btn.addEventListener("click", function(){
+            para.style.color = "cyan";
+            clear.style.visibility = "visible";
+            btn.style.visibility = "hidden";
+        })
+
+        /*clear.addEventListener("click", ()=>{
+            para.style.color= "black";
+            clear.style.visibility = "hidden";
+        })*/
+
+        function effacer(){
+            document.getElementById("para").style.color= "black";
+            document.getElementById("clear").style.visibility = "hidden";
+            document.getElementById("btn").style.visibility = "visible";
+        }
+    </script>
+</body>
+</html>

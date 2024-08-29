@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p{
+            font-family: Algerian;
+            background: #0b66a3;
+        }
+
+        .c{
+            font-size: 35px;
+        }
+        .d{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="zone" class="p c"><p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo rem explicabo laudantium sapiente provident eum beatae in mollitia quo tempora quibusdam, 
+            aspernatur distinctio, nesciunt et maxime natus voluptas quisquam.
+        </p>
+    </div>
+
+    <script>
+        let lien = document.createElement("a");
+        let contenu = document.createTextNode("Cliquer pour surfer sur youtube");
+        
+        lien.appendChild(contenu);
+        lien.href= "https://youtube.com";
+        lien.setAttribute("target", "_blank");
+        let zone = document.getElementById("zone");
+        zone.appendChild(lien)
+
+        //zone.className = "d";
+
+        // ajouter une classe
+        zone.classList.add("d");
+        //supprimer une classe
+        //zone.classList.remove("p");
+
+        console.log(zone.className)
+        console.log(zone.classList)
+
+        console.log(zone.firstChild)
+        zone.firstChild.innerText = "Nouveau paragraphe";
+    </script>
+</body>
+</html>
